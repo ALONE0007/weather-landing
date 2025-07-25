@@ -1,20 +1,16 @@
 <template>
-    <router-view />
-    <goToTest />
+    <div>
+        <headers />
+        <router-view></router-view>
+    </div>
 </template>
 <script>
-
-import test from './components/test.vue';
-import goToTest from './components/goToTest.vue';
+import headers from "./components/Landing-Page-Responsive/headers.vue";
 
 export default {
-    name:'app',
-    components:{
-        test,
-        goToTest
-    }
-}
+  name: "App",
+  components: {
+    headers,
+  },
+};
 </script>
-<style>
-    
-</style>
